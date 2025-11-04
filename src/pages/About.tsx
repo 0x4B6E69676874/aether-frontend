@@ -5,7 +5,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto p-6 space-y-8 max-w-3xl">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">about aether protocol</h1>
+          <h1 className="text-3xl font-bold tracking-tight">about aether</h1>
           <p className="text-muted-foreground">a new liquidity management system</p>
         </div>
 
