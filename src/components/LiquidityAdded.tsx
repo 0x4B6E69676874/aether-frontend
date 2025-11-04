@@ -24,8 +24,22 @@ export const LiquidityAdded = ({ data }: LiquidityAddedProps) => {
               className="flex justify-between items-center text-xs gap-2"
             >
               <div className="flex items-center gap-2">
-                <span className="text-muted-foreground font-mono hidden lg:inline">{tx.hash}</span>
-                <span className="text-muted-foreground font-mono lg:hidden">{truncateHash(tx.hash)}</span>
+                <a
+                  href={`https://basescan.org/tx/${tx.hash}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground font-mono hidden lg:inline hover:text-foreground transition-colors"
+                >
+                  {tx.hash}
+                </a>
+                <a
+                  href={`https://basescan.org/tx/${tx.hash}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground font-mono lg:hidden hover:text-foreground transition-colors"
+                >
+                  {truncateHash(tx.hash)}
+                </a>
                 <span className="text-muted-foreground">• {formatTimeAgo(tx.timestamp)}</span>
               </div>
               <span className="font-medium whitespace-nowrap">${formatNumber(tx.amount)}</span>

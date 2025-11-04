@@ -4,6 +4,8 @@ import { LiquidityAdded } from "@/components/LiquidityAdded";
 import { UniswapPosition } from "@/components/UniswapPosition";
 import { SocialIcon } from "react-social-icons";
 import { useAetherData } from "@/hooks/useAetherData";
+import { Link } from "react-router-dom";
+import { toast } from "sonner";
 
 const Index = () => {
   const { data, isLoading, error } = useAetherData();
@@ -40,7 +42,16 @@ const Index = () => {
       <div className="container mx-auto p-6 space-y-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">aether</h1>
-          <p className="text-muted-foreground">next gen liquidity management</p>
+          <p
+            className="text-muted-foreground cursor-pointer hover:text-foreground transition-colors"
+            onClick={() => {
+              navigator.clipboard.writeText("0x7a3f8b9c2d4e5f6a1b2c3d4e5f6a7b8c9d0e1f2a");
+              toast.success("address copied to clipboard");
+            }}
+            title="Click to copy address"
+          >
+            ca: 0x7a3f8b9c2d4e5f6a1b2c3d4e5f6a7b8c9d0e1f2a
+          </p>
         </div>
 
         <div className="grid gap-4 lg:grid-cols-3">
@@ -56,13 +67,9 @@ const Index = () => {
         </div>
 
         <div className="flex justify-center items-center gap-4 py-8">
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+          <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
             about
-          </a>
-          <span className="text-muted-foreground">|</span>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-            docs
-          </a>
+          </Link>
           <span className="text-muted-foreground">|</span>
           <a href="https://x.com" className="text-muted-foreground hover:text-foreground transition-colors">
             <SocialIcon network="x" bgColor="#141414" fgColor="#999999" style={{ height: 26, width: 26 }} />
