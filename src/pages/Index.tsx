@@ -45,12 +45,12 @@ const Index = () => {
           <p
             className="text-muted-foreground cursor-pointer hover:text-foreground transition-colors"
             onClick={() => {
-              navigator.clipboard.writeText("0x7a3f8b9c2d4e5f6a1b2c3d4e5f6a7b8c9d0e1f2a");
+              navigator.clipboard.writeText("0xDcFa32Cc9E29E13dE685118b2aeF353e057d12FE");
               toast.success("address copied to clipboard");
             }}
             title="Click to copy address"
           >
-            ca: 0x7a3f8b9c2d4e5f6a1b2c3d4e5f6a7b8c9d0e1f2a
+            ca: 0xDcFa32Cc9E29E13dE685118b2aeF353e057d12FE
           </p>
         </div>
 

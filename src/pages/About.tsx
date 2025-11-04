@@ -1,4 +1,5 @@
 import { SocialIcon } from "react-social-icons";
+import { DistributionChart } from "@/components/DistributionChart";
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
           <section>
             <h2 className="text-xl font-semibold mb-3">what is aether?</h2>
             <p className="text-muted-foreground leading-relaxed">
-              AETHER is a new liquidity management system designed to make better use 
+              AETHER is a token that uses a new liquidity management system designed to make better use 
               of the fees generated from initial liquidity in new token launches.
               Traditionally, developers create and fund a DEX liquidity pool, 
               then burn the resulting LP tokens / position to eliminate any ability to withdraw liquidity—preventing 
@@ -28,11 +29,23 @@ const About = () => {
           </section>
 
           <section>
+            <h2 className="text-xl font-semibold mb-3">token distribution</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              The initial token distribution for AETHER is designed to support the protocol's development,
+              incentivize early adopters, and ensure long-term sustainability. The allocation is as follows:
+            </p>
+            <DistributionChart />
+            <p className="text-muted-foreground">
+              Tokens allocated to the treasury will be used for ongoing development, marketing, and ecosystem growth.
+            </p>
+          </section>
+
+          <section>
             <h2 className="text-xl font-semibold mb-3">key features</h2>
             <ul className="text-muted-foreground leading-relaxed space-y-2 list-disc list-inside">
-              <li>fee collection</li>
+              <li>rug proof liquidity / fee collection</li>
               <li>token buybacks and burn</li>
-              <li>automated liquidity reinvestment</li>
+              <li>liquidity reinvestment</li>
             </ul>
           </section>
 
