@@ -61,10 +61,16 @@ const Index = () => {
           <UniswapPosition data={data.uniswapPosition} />
         </div>
 
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
-          <TokensBurnt data={data.tokensBurnt} />
-          <LiquidityAdded data={data.liquidityAdded} />
-        </div>
+        {(data.tokensBurnt.transactionCount > 0 || data.liquidityAdded.transactionCount > 0) && (
+          <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+            {data.tokensBurnt.transactionCount > 0 && (
+              <TokensBurnt data={data.tokensBurnt} />
+            )}
+            {data.liquidityAdded.transactionCount > 0 && (
+              <LiquidityAdded data={data.liquidityAdded} />
+            )}
+          </div>
+        )}
 
         <div className="flex justify-center items-center gap-4 py-8">
           <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
