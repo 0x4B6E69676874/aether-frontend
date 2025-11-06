@@ -14,17 +14,18 @@ const About = () => {
           <section>
             <h2 className="text-xl font-semibold mb-3">what is aether?</h2>
             <p className="text-muted-foreground leading-relaxed">
-              AETHER is a token that uses a new liquidity management system designed to make better use 
-              of the fees generated from initial liquidity in new token launches.
-              Traditionally, developers create and fund a DEX liquidity pool, 
-              then burn the resulting LP tokens / position to eliminate any ability to withdraw liquidity—preventing 
-              rug pulls but also locking away valuable trading fees forever.
+              AETHER is a token built on a next-generation liquidity management system designed to make better use of trading fees from new token launches.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              AETHER protocol changes this model by depositing the initial LP tokens / position into a 
-              controlled smart contract that removes the dev's ability to pull liquidity, while allowing for actions that benefit the token.
-              This structure enables the protocol to utilize trading fees for actions that strengthen the token—such as 
-              reinvesting liquidity or performing buybacks—turning idle LP fees into an engine for sustainable token growth.
+              Traditionally, developers fund a decentralized exchange (DEX) liquidity pool and then burn the resulting LP tokens to prevent liquidity withdrawal. 
+              While this practice protects against rug pulls, it also permanently locks away valuable trading fees that could support the token’s long-term stability.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              AETHER Protocol changes this model by locking the initial liquidity position inside a transparent, verifiable smart contract. 
+              This removes developer control over liquidity while enabling rule-based, community-driven actions — such as reinvesting collected fees or executing controlled buybacks.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              By transforming passive LP fees into an active mechanism for liquidity growth and stability, AETHER establishes a more sustainable foundation for token ecosystems.
             </p>
           </section>
 
