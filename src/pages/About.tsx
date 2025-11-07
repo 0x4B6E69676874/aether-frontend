@@ -49,7 +49,7 @@ const About = () => {
             <ul className="text-muted-foreground leading-relaxed space-y-2 list-disc list-inside">
               <li>rug proof liquidity / fee collection</li>
               <li>token buybacks and burn</li>
-              <li>liquidity reinvestment</li>
+              <li>liquidity stability</li>
             </ul>
           </section>
 
