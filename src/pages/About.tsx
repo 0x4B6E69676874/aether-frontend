@@ -36,6 +36,9 @@ const About = () => {
               incentivize early adopters, and ensure long-term sustainability. The allocation is as follows:
             </p>
             <DistributionChart />
+            <p className="text-muted-foreground mb-2">
+              Treasury wallet: 0x5E2CB7a61aA77c5b829Ce285E9C59c9ed4B3629e
+            </p>
             <p className="text-muted-foreground">
               Tokens allocated to the treasury will be used for ongoing development, marketing, and ecosystem growth.
             </p>
@@ -57,10 +60,10 @@ const About = () => {
               in decisions. 
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://x.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://x.com/_aetherprotocol" className="text-muted-foreground hover:text-foreground transition-colors">
                 <SocialIcon network="x" bgColor="#141414" fgColor="#999999" style={{ height: 32, width: 32 }} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://t.me/+DmNt3Zo-BoM5YTdh" className="text-muted-foreground hover:text-foreground transition-colors">
                 <SocialIcon network="telegram" bgColor="#141414" fgColor="#999999" style={{ height: 32, width: 32 }} />
               </a>
             </div>
@@ -69,7 +72,7 @@ const About = () => {
 
         <div className="flex justify-center items-center gap-4 py-8 border-t border-border">
           <a href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-            back to home
+            wip
           </a>
         </div>
       </div>
