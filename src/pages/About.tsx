@@ -36,9 +36,6 @@ const About = () => {
               incentivize early adopters, and ensure long-term sustainability. The allocation is as follows:
             </p>
             <DistributionChart />
-            <p className="text-muted-foreground mb-2">
-              Treasury wallet: 0x5E2CB7a61aA77c5b829Ce285E9C59c9ed4B3629e
-            </p>
             <p className="text-muted-foreground">
               Tokens allocated to the treasury will be used for ongoing development, marketing, and ecosystem growth.
             </p>
